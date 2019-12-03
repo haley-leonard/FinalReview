@@ -34,9 +34,9 @@ namespace JSON
                 if (response.IsSuccessStatusCode)
                 {
                     var content = response.Content.ReadAsStringAsync().Result;
-                    VARIABLE = JsonConvert.DeserializeObject<Movies>(content);
+                    var mov = JsonConvert.DeserializeObject<Movies>(content);
 
-                    var x = JsonConvert.SerializeObject(VARIABLE);
+                    var x = JsonConvert.SerializeObject(mov);
                 }
             }
         }
