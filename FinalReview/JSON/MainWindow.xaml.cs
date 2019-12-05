@@ -25,12 +25,12 @@ namespace JSON
         public MainWindow()
         {
             InitializeComponent();
-            var url="http:///pcbstuou.w27.wh-2.com//webservices//3033//api//Movies?number=100";
+            //var url="";
 
             
             using (HttpClient client = new HttpClient())
             {
-                var response = client.GetAsync(url).Result;
+                var response = client.GetAsync(@"http://pcbstuou.w27.wh-2.com/webservices/3033/api/Movies?number=100").Result;
                 if (response.IsSuccessStatusCode)
                 {
                     var content = response.Content.ReadAsStringAsync().Result;

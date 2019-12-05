@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="genresBTN" Content="Find Movie Genres:" HorizontalAlignment="Left" Height="61" Margin="10,10,0,0" VerticalAlignment="Top" Width="212" FontSize="22" Click="GenresBTN_Click"/>
-        <TextBox x:Name="genresTXT" HorizontalAlignment="Left" Height="61" Margin="250,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="22"/>
+        <Button x:Name="genresBTN" Content="Find Movie Genres:" HorizontalAlignment="Left" Height="80" Margin="10,10,0,0" VerticalAlignment="Top" Width="212" FontSize="22" Click="GenresBTN_Click"/>
         <Button x:Name="imdbScoreBTN" Content="Highest IMDB score:" HorizontalAlignment="Left" Height="69" Margin="10,95,0,0" VerticalAlignment="Top" Width="212" FontSize="22"/>
-        <TextBox x:Name="imdbScoreTXT" HorizontalAlignment="Left" Height="69" Margin="250,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="22"/>
         <Button x:Name="votedUsersBTN" Content="350,000 or more Voted Users" HorizontalAlignment="Left" Height="79" Margin="10,169,0,0" VerticalAlignment="Top" Width="212" FontSize="16"/>
-        <Button x:Name="RussoMoviesBTN" Content="Anthony Russo's movies:" HorizontalAlignment="Left" Height="67" Margin="10,253,0,0" VerticalAlignment="Top" Width="212" FontSize="18"/>
+        <Button x:Name="RussoMoviesBTN" Content="Anthony Russo's movies:" HorizontalAlignment="Left" Height="84" Margin="10,253,0,0" VerticalAlignment="Top" Width="212" FontSize="18"/>
         <Button x:Name="rdjActorBTN" Content="Robert Downey Jr. is acotr 1" HorizontalAlignment="Left" Height="69" Margin="10,342,0,0" VerticalAlignment="Top" Width="212" FontSize="16"/>
         <TextBox x:Name="votedUsersTXT" HorizontalAlignment="Left" Height="79" Margin="250,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="22"/>
-        <TextBox x:Name="RussoMoviesTXT" HorizontalAlignment="Left" Height="67" Margin="250,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="22"/>
+        <TextBox x:Name="RussoMoviesTXT" HorizontalAlignment="Left" Height="84" Margin="250,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="22"/>
         <TextBox x:Name="rdjActorTXT" HorizontalAlignment="Left" Height="69" Margin="250,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="22"/>
+        <ListBox x:Name="genreLB" HorizontalAlignment="Left" Height="75" Margin="250,10,0,0" VerticalAlignment="Top" Width="533" FontSize="22"/>
+        <ListBox x:Name="imdbScoreLB" HorizontalAlignment="Left" Height="74" Margin="251,90,0,0" VerticalAlignment="Top" Width="532" FontSize="22"/>
     </Grid>
 </Window>

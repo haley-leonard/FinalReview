@@ -8,6 +8,7 @@ namespace JSON
 {
     class Movies
     {
+        public int movie_Id { get; set; }
         public string director_name { get; set; }
         public string genres { get; set; }
         public string actor_1_name { get; set; }
@@ -18,6 +19,7 @@ namespace JSON
 
         public Movies()
         {
+            movie_Id = 0;
             director_name = string.Empty;
             genres = string.Empty;
             actor_1_name = string.Empty;
