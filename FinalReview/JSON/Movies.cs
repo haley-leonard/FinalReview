@@ -28,6 +28,11 @@ namespace JSON
             movie_imdb_link = string.Empty;
             imdb_score = 0;
         }
+
+        public override string ToString()
+        {
+            return movie_title + " directed by " + director_name;
+        }
     }
 
 }
