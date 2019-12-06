@@ -1,0 +1,9 @@
+﻿@model MVCReview.Models.AboutClass
+
+@{
+    ViewBag.Title = "About Sooners Football";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>OU football is coached by <b>@(Model.HeadCoach)</b>. The sooners have a bowl record of <b>@Model.BowlRecord</b> and have <b>@Model.NationalTitles</b> in their history.</p>
