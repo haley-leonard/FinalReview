@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MVCReview.Models.FootballSchedule>
+
+@{
+    ViewBag.Title = (Model.First().Season) + "Schedule";
+    var color = "white";
+    var glyph = "glyphicon-globe";
+
+
+}
+
+<h2 style="text-align:center">OU Football Schedule for @Model.First().Season</h2>
+
+@foreach (var item in Model)
+{
+    if(item.IsHomeGame)
+    {
+        color = "darkred";
+        glyph = "glyphicon-home";
+    }
+    else
+    {
+        color = "gray";
+        glyph = "glyphicon-globe";
+    }
+<div class="card" style="width: 200px; height:250px; float:left; background-color:@color; margin:5px; padding:5px; border-radius:25px; color:white;">
+    @*<img class="card-img-top" src="..." alt="Card image cap">*@
+    
+    <div class="card-body">
+        <span class="@("glyphicon " + glyph)" style="color:white; font-size:2.2em;"></span>
+        @if (item.Opponent.Trim().ToLower() == "texas")
+        {
+            <img class="card-img-top" style="width:50%;" src="https://www.thelostogle.com/wp-content/uploads/2010/02/texas-longhorn-logo-450x225.jpg" alt="horns down">
+        }
+        <h5 class="card-title">OU vs. @item.Opponent</h5>
+        <p class="card-text">@item.Date.ToLongDateString()</p>
+    </div>
+</div>
+}
+
+<div class="row"></div>
+
